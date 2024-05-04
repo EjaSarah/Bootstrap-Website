@@ -1,0 +1,323 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+
+/* Nav logo styling */
+.logo{
+  width: 100;
+  height :50px;
+  margin: 15px 5px 15px;
+  border-radius: 20px;        
+}
+
+.nav-logo{
+  display: flex;
+}
+
+.nav-logo p{
+  color: #fff;
+}
+
+
+/* Nav logo span */
+.span-p{
+  color: red;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+
+/* This is navbar styling */
+.navbar{
+/* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; */ 
+  padding: 0 20px;
+  background: linear-gradient(to bottom right, #1f4d32, #070734);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: Roboto;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
+
+.nav-links a{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.nav-links a:hover{ 
+  color: #ffcc00;
+  transform: rotate(6deg);
+}
+
+.nav-links ul{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Hero / Background Image */
+.background-image {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url('images/bg-image.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Overlay */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  
+
+  .heading-text {
+    position: relative;
+    z-index: 1; /* Ensure content is above the overlay */
+    text-align: center;
+    color: rgb(202, 80, 211);
+    padding-top: 200px;
+    /* padding-bottom: 100p; */
+  }
+  
+  .heading-text h1 {
+    font-weight: bolder;
+    font-size: 46px;
+    margin-bottom: 20px;
+
+  }
+  
+  .heading-text span {
+    font-weight: bolder;
+    font-size: 46px;
+    color: #0a26dad5;
+  }
+
+  .heading-text p {
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  /* Hero section a tag */
+  .book{
+    border-color: rgb(235, 3, 3);
+    color: #ffffff;
+  } 
+
+  /* gradient color for book now link */
+  .gradient {
+    /* Linear Gradient from top-left (red) to bottom-right (blue) */
+    background: linear-gradient(to bottom right, #FF0000, #0000FF);
+    
+  }
+  
+
+  .gradient:hover{
+    border-color: rgb(250, 119, 241);
+    color:  #1d1d1d;
+  }
+
+
+  
+/*Destination Section */
+
+.destination-image-grid {
+  background: linear-gradient(to bottom right, #1f4d32, #070734);
+  padding: 50px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.destination-heading {
+  margin-top: 300px;
+  margin-bottom: 0;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 45px;
+  color: #0000FF
+}
+
+.destination-subheading {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 25px;
+  color:rgb(250, 119, 241);
+}
+
+/* Style individual images */
+.image {
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+  height: 600px; /* Adjust as needed */
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Destination text */
+.destination-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px;
+  color: white;
+}
+
+.destination-text h3 {
+  margin-bottom: 5px;
+}
+
+.destination-text p {
+  font-size: 14px;
+}
+
+.destination-a{
+  color: #ffffff;
+  border-color: rgb(235, 3, 3);
+  background-color: #1d1d1d;
+}
+
+
+.destination-a:hover{
+  color: #1d1d1d;
+  border-color:  rgb(250, 119, 241);
+  background-color: #ffffff;
+}
+
+
+/* This Is Tours Packages Section Styles Of Accordion Items */
+
+#accordionPanelsStayOpenExample{
+ margin-bottom: 300px;
+ margin-left: 50px;
+ margin-right: 50px;
+ background: linear-gradient(to bottom right, #1f4d32, #070734);
+}
+
+/* Contact Section */
+.contact-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Footer */
+.footer {
+  background: linear-gradient(to bottom right, #1f4d32, #070734);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #007bff;
+}
+
+/* Copyright */
+p {
+  margin-bottom: 10px;
+}
+
+
+/* Responsive Media query begins here */
+
+@media  screen and (max-width:768px) {
+  .destination-image-grid{
+      grid-template-columns: repeat(1, 1fr);
+  }
+  .vacation-section {
+    grid-template-columns: repeat(1, 1fr); /* Four columns on larger screens */
+  }
+}
